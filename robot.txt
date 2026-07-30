@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://blogdevbysartaj.web.app/sitemap.xml

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- =========================
+         Basic Meta
+    ========================== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- =========================
+         Primary SEO & Title
+    ========================== -->
+    <title>Search Blogs | DevBySartaj</title>
+    <meta name="description" content="Search through technical articles, coding tutorials, and guides on technology, lifestyle, and personal growth at DevBySartaj." >
+    <meta name="keywords" content="Search DevBySartaj, Find Blogs, Coding Tutorials, Technical Articles, Sartaj Ali">
+    <meta name="author" content="Sartaj Ali">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://blogdevbysartaj.web.app/search.html">
+
+    <!-- =========================
+         Theme
+    ========================== -->
+    <meta name="theme-color" content="#0d1117">
+
+    <!-- =========================
+         Open Graph / Facebook
+    ========================== -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="DevBySartaj">
+    <meta property="og:title" content="Search Blogs | DevBySartaj">
+    <meta property="og:description" content="Search through technical articles, coding tutorials, and guides on technology, lifestyle, and personal growth at DevBySartaj." >
+    <meta property="og:url" content="https://blogdevbysartaj.web.app/search.html">
+    <meta property="og:image" content="https://blogdevbysartaj.web.app/Image/dp.png">
+    <meta property="og:image:secure_url" content="https://blogdevbysartaj.web.app/Image/dp.png">
+    <meta property="og:image:alt" content="Search Blogs - DevBySartaj">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- =========================
+         Twitter / X
+    ========================== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Search Blogs | DevBySartaj">
+    <meta name="twitter:description" content="Search through technical articles, coding tutorials, and guides on technology, lifestyle, and personal growth at DevBySartaj." >
+    <meta name="twitter:image" content="https://blogdevbysartaj.web.app/Image/dp.png">
+
+    <!-- =========================
+         Favicon
+    ========================== -->
+    <link rel="icon" type="image/png" sizes="32x32" href="Image/dp.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="Image/dp.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Image/dp.png">
+
+    <!-- =========================
+         CSS Files
+    ========================== -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/search.css">
+
+    <!-- =========================
+         Fonts & Icons
+    ========================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- =========================
+         Schema.org (JSON-LD)
+    ========================== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Search Blogs | DevBySartaj",
+      "url": "https://blogdevbysartaj.web.app/search.html",
+      "description": "Search through technical articles, coding tutorials, and guides on technology and personal growth.",
+      "author": {
+        "@type": "Person",
+        "name": "I'm Sartaj"
+      }
+    }
+    </script>
+</head>
+<body>
+
+  <main class="container search-page-container">
+    <div class="search-page-box">
+      
+      <!-- Top Header Title -->
+      <div class="search-page-header">
+        <h2>Search</h2>
+        <a href="index.html" class="search-close-link"><i class="fa-solid fa-xmark"></i></a>
+      </div>
+      
+      <!-- Input Box -->
+      <div class="search-modal-input-wrapper">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="liveSearchInput" placeholder="Type to search blogs..." autocomplete="off" autofocus>
+      </div>
+
+      <!-- Filter Pills (All, Courses, Tutorials, Blog Posts) -->
+      <div class="search-filters">
+        <button class="filter-pill active" data-filter="all">All</button>
+        <button class="filter-pill" data-filter="courses">Courses</button>
+        <button class="filter-pill" data-filter="tutorials">Tutorials</button>
+        <button class="filter-pill" data-filter="blogs">Blog Posts</button>
+      </div>
+
+      <!-- Results Area -->
+      <div class="search-modal-results" id="modalSearchResults">
+        <p class="search-placeholder-text">Type at least 2 characters to search</p>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

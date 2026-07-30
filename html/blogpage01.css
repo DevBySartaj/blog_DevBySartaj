@@ -1,0 +1,145 @@
+
+
+
+
+:root {
+  /* Light Theme Colors (Default) */
+  --bg: #f4f6fb;
+  --surface: #ffffff;
+  --surface-2: #f0f3fa;
+  --border: #e2e7f0;
+  --text: #0b1220;
+  --text2: white;
+  --muted: #5a6478;
+  --accent: #2f6bff;
+  --accent-hover: #1f57e0;
+  --radius: 14px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* Dark Theme (Triggered by adding 'dark' class to body) */
+body.dark {
+  --bg: #0b1220;
+  --surface: #111a2e;
+  --surface-2: #16223b;
+  --border: #1f2c48;
+  --text: #e6ecf7;
+  --text2: black;
+  --muted: #9aa7bd;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* --- Base & Reset Styles --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+.blogpage-heading h2{
+    text-align: center;
+    color: var(--text);
+    font-size: 40px;
+}
+
+
+/* Pagination Container */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+/* Base Page Button Style */
+.page-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 42px;
+  height: 42px;
+  padding: 0 12px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background-color: #ffffff;
+  color: #1f2937;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+/* Hover State */
+.page-link:hover {
+  border-color: #d1d5db;
+  background-color: #f9fafb;
+}
+
+/* Active Page Style (काला बटन जैसा इमेज में है) */
+.page-link.active {
+  background-color: #18181b;
+  color: #ffffff;
+  border-color: #18181b;
+  font-weight: 600;
+}
+
+/* Dots (...) Style */
+.pagination .dots {
+  color: #6b7280;
+  font-weight: bold;
+  padding: 0 4px;
+}
+
+/* Next Button Specific Style */
+.next-btn {
+  gap: 6px;
+  padding: 0 16px;
+}
+
+/* Dark Mode Support (अगर डार्क मोड ऑन हो) */
+body.dark .page-link {
+  background-color: #1f2937;
+  border-color: #374151;
+  color: #f3f4f6;
+}
+
+body.dark .page-link:hover {
+  background-color: #374151;
+}
+
+body.dark .page-link.active {
+  background-color: var(--text); /* डार्क मोड में एक्टिव बटन */
+  border-color: var(--muted);
+  color: var(--text2);
+}
+
+body.dark .pagination .dots {
+  color: #9ca3af;
+}
+
+
+/* --- Mobile Responsive View for Pagination --- */
+@media (max-width: 768px) {
+  .pagination {
+    gap: 6px; /* मोबाइल पर बटन के बीच का गैप थोड़ा कम कर दिया है */
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap; /* अगर स्क्रीन बहुत छोटी हो तो बटन नीचे लाइन में आ जाएं */
+  }
+
+  .page-link {
+    min-width: 36px; /* मोबाइल के लिए चौड़ाई थोड़ी कम */
+    height: 36px;    /* हाइट थोड़ी कम */
+    padding: 0 8px;  /* पैडिंग कम की ताकि स्क्रीन से बाहर न जाए */
+    font-size: 0.85rem; /* फॉन्ट साइज मोबाइल फ्रेंडली */
+  }
+
+  .next-btn {
+    padding: 0 12px;
+  }
+}

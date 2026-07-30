@@ -1,0 +1,78 @@
+:root {
+  /* Light Theme Colors (Default) */
+  --bg: #f4f6fb;
+  --surface: #ffffff;
+  --surface-2: #f0f3fa;
+  --border: #e2e7f0;
+  --text: #0b1220;
+  --text2: white;
+  --muted: #5a6478;
+  --accent: #2f6bff;
+  --accent-hover: #1f57e0;
+  --radius: 14px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+  --bg-overlay: rgba(255, 255, 255, 0.93);
+}
+
+/* Dark Theme (Triggered by adding 'dark' class to body) */
+body.dark {
+  --bg: #0b1220;
+  --surface: #111a2e;
+  --surface-2: #16223b;
+  --border: #1f2c48;
+  --text: #e6ecf7;
+  --text2: black;
+  --muted: #9aa7bd;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+
+  --bg-overlay: rgba(6, 6, 6, 0.94);
+}
+
+/* --- Base & Reset Styles --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+
+
+
+
+
+/* Legal Pages Extra Styling */
+    .legal-section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      color: #333;
+      line-height: 1.7;
+    }
+    .legal-section h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: var(--text);
+    }
+    .legal-date {
+      color:var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 40px;
+    }
+    .legal-section h2 {
+      font-size: 1.5rem;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      color: var(--text);
+    }
+    .legal-section p, .legal-section li {
+      margin-bottom: 15px;
+      color: var(--muted);
+    }
+    .legal-section ul {
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }

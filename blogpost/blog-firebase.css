@@ -1,0 +1,411 @@
+:root {
+  /* Light Theme Colors (Default) */
+  --bg: #f4f6fb;
+  --surface: #ffffff;
+  --surface-2: #f0f3fa;
+  --border: #e2e7f0;
+  --text: #0b1220;
+  --text2: white;
+  --muted: #5a6478;
+  --accent: #2f6bff;
+  --accent-hover: #1f57e0;
+  --radius: 14px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* Dark Theme (Triggered by adding 'dark' class to body) */
+body.dark {
+  --bg: #0b1220;
+  --surface: #111a2e;
+  --surface-2: #16223b;
+  --border: #1f2c48;
+  --text: #e6ecf7;
+  --text2: black;
+  --muted: #9aa7bd;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* --- Base & Reset Styles --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ==========================================
+   Single Blog Page Layout (Independent Scrolling)
+   ========================================== */
+
+.blog-detail-container {
+  max-width: 1500px;
+  width: 90%;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 340px; /* मेन लेआउट स्ट्रक्चर */
+  gap: 40px;
+  align-items: start;
+  box-sizing: border-box;
+}
+
+/* --- Left Column: Main Blog Content --- */
+.blog-main-content {
+  background: var(--surface); 
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: var(--shadow);
+  transition: background 0.3s ease, border 0.3s ease;
+  min-width: 0; /* कोड बॉक्स के कारण कंटेंट बाहर भागने से रोकेगा */
+  width: 100%;
+
+}
+
+/* --- Blog Body Links Styling --- */
+.blog-body a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.blog-body a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+.blog-header .tag {
+  background: rgba(47, 107, 255, 0.1);
+  color: var(--accent);
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.blog-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--text);
+  margin: 15px 0 10px 0;
+  line-height: 1.3;
+}
+
+.blog-meta {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 25px;
+}
+
+.blog-featured-img img {
+  width: 100%;
+  max-width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.blog-body {
+  color: var(--text);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  
+}
+
+.blog-body h2 {
+  font-size: 1.5rem;
+  color: var(--text);
+  margin: 30px 0 15px 0;
+}
+
+/* --- Clean Code Box & Floating Icon Styling --- */
+.code-box {
+  position: relative;
+  background: #0f172a; 
+  border: 1px solid #334155;
+  border-radius: 10px 10px 4px 4px;
+  padding: 16px 20px;
+  margin: 20px 0 0 0;
+  overflow: hidden;
+}
+
+.copy-action-wrapper {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 2;
+}
+
+.copy-feedback {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #10b981;
+  background: rgba(16, 185, 129, 0.1);
+  padding: 2px 8px;
+  border-radius: 4px;
+  opacity: 0;
+  transform: translateX(10px);
+  transition: all 0.25s ease-in-out;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.copy-action-wrapper.show-msg .copy-feedback {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.copy-icon-btn {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copy-icon-btn:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.code-box pre {
+  margin: 0;
+  color: #f8fafc;
+  overflow-x: auto;
+  font-family: 'Fira Code', Consolas, monospace;
+  font-size: 0.95rem;
+  padding-right: 30px;
+}
+
+/* --- Terminal Output Box Styling --- */
+.output-box {
+  position: relative;
+  background: #090d16;
+  border: 1px solid #334155;
+  border-top: 1px dashed rgba(255, 255, 255, 0.1);
+  border-radius: 0 0 10px 10px;
+  padding: 14px 18px;
+  margin: 0 0 25px 0;
+}
+
+.output-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+.output-box pre {
+  margin: 0;
+  color: #93c5fd;
+  overflow-x: auto;
+  font-family: 'Fira Code', Consolas, monospace;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+/* --- Right Column: Independent Sticky Sidebar --- */
+.blog-sidebar {
+  position: sticky;
+  top: 100px;
+  height: calc(100vh - 100px);
+  overflow-y: auto;
+  width: 100%;
+  
+  /* इन दोनों प्रॉपर्टीज़ से स्क्रॉलबर पूरी तरह छुप जाएगा लेकिन स्क्रॉलिंग काम करती रहेगी */
+  scrollbar-width: none;  /* Firefox के लिए */
+  -ms-overflow-style: none;  /* Internet Explorer और Edge के लिए */
+}
+
+/* Custom Scrollbar for Sidebar */
+.blog-sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.blog-sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.blog-sidebar::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 10px;
+}
+
+.blog-sidebar::-webkit-scrollbar-thumb:hover {
+  background: var(--muted);
+}
+
+.sticky-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--);
+  border-radius: 16px;
+  padding: 24px; /* पैडिंग को यहाँ शिफ्ट कर दिया ताकि सही दिखे */
+}
+
+.sidebar-card {
+  border-radius: 16px;
+  transition: background 0.3s ease, border 0.3s ease;
+}
+
+/* Author Card */
+.author-avatar img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent);
+  margin-bottom: 12px;
+}
+
+.author-card h3 {
+  font-size: 1.2rem;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.author-bio {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.author-link {
+  display: inline-block;
+  border-radius: 12px;
+  padding: 10px 20px;
+  background: var(--text);
+  color: var(--text2);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.author-link:hover {
+  opacity: 0.9;
+}
+
+/* Related Posts Widget */
+.related-posts-widget h3 {
+  font-size: 1.1rem;
+  color: var(--text);
+  margin-bottom: 18px;
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 8px;
+}
+.realted-btn {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Spelling sahi kar di hai */
+  margin-bottom: 10px;
+}
+
+.realted-btn h3 {
+  margin: 0; /* Heading ki extra margin hatane ke liye taaki exact center me aaye */
+}
+
+.realted-btn a {
+
+  background: rgba(47, 107, 255, 0.1);
+  color: var(--accent);
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 700;
+
+  border: 1px solid transparent;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center; /* Link ke andar text ko vertical center karne ke liye */
+}
+
+.realted-btn a:hover {
+   border: 1px solid var(--muted);
+   color: var(--text);
+}
+
+.related-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.related-item {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  text-decoration: none;
+}
+
+.related-item img {
+  width: 65px;
+  height: 65px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.related-info h4 {
+  font-size: 0.9rem;
+  color: var(--text);
+  line-height: 1.3;
+  margin-bottom: 4px;
+  transition: color 0.2s ease;
+}
+
+.related-item:hover h4 {
+  color: var(--accent);
+}
+
+.related-date {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+/* --- Responsive for Mobile & Tablet --- */
+@media (max-width: 992px) {
+  .blog-detail-container {
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 8px;
+  }
+  
+  .blog-sidebar {
+    position: static;
+    height: auto;
+    overflow-y: visible;
+  }
+  .blog-main-content {
+    padding: 15px;
+  }
+}

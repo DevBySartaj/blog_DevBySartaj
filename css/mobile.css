@@ -1,0 +1,205 @@
+/* ==========================================
+   Mobile Responsive Drawer & Menu Styles
+   ========================================== */
+@media (max-width: 960px) {
+  
+  /* पीछे का डार्क ओवरले बैकग्राउंड */
+  .mobile-menu-overlay {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 72px);
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    z-index: 9998;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+  .mobile-menu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .mobile-menu-btn {
+    display: flex;
+  }
+
+  .desktop-explore-btn {
+    display: none;
+  }
+
+  .mobile-explore-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    background: var(--accent);
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+
+  /* नेविगेशन मेनू ड्रॉर */
+  .nav-links {
+    position: fixed;
+    top: 72px;
+    right: -300px;
+    width: 280px;
+    height: calc(100vh - 72px);
+    background: var(--surface);
+    border-bottom: none;
+    border-left: 1px solid var(--border);
+    border-top: 1px solid var(--border);
+    flex-direction: column;
+    padding: 24px;
+    gap: 16px;
+    box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    transition: right 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow-y: auto;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .nav-links a {
+    color: var(--text);
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+    background: transparent;
+  }
+
+  .nav-links a:hover,
+  .nav-links a.active {
+    color: var(--accent);
+  }
+
+  .nav-links a.mobile-explore-btn {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    background: var(--accent) !important;
+    color: #ffffff !important;
+    padding: 12px 20px !important;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    margin-top: 10px;
+    border-bottom: none !important;
+  }
+
+  .drawer-close-btn {
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    color: var(--text);
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    align-self: flex-end;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  .drawer-close-btn:hover {
+    background: var(--accent);
+    color: #ffffff;
+    border-color: var(--accent);
+  }
+
+  /* बाकी मोबाइल लेआउट सेटिंग्स */
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-text p {
+    text-align: center;
+  }
+  
+  .icon-btn {
+    font-size: 20px;
+  }
+  
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hero-card img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-features {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding-top: 24px;
+  }
+
+  .section-head h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text);
+  }
+    
+  .creative-img-box {
+    width: 100px;
+    height: auto;
+  }
+  
+  .creative-img {
+    width: 180px !important; 
+    height: auto; 
+    bottom: 0px; 
+  }
+    
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    width: 90%;
+    padding: 10px;
+    margin: 0 auto;
+  }
+
+  .topics-container {
+    width: 96%;
+  }
+
+  .tech-stack-container {
+    width: 100%;
+  }
+}

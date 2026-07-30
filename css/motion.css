@@ -1,0 +1,152 @@
+/* ==========================================
+   Seamless Continuous Marquee Tech Stack Section
+   ========================================== */
+
+.tech-stack-section {
+  padding: 60px 0;
+  background-color: var(--surface-2);
+  overflow: hidden;
+  width: 100%;
+}
+
+.tech-stack-container {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.tech-stack-section h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.marquee-wrapper {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  background: transparent !important;
+}
+
+.marquee-track {
+  display: flex;
+  gap: 15px;
+  width: max-content;
+  will-change: transform;
+  transform: translate3d(0, 0, 0); 
+}
+
+.marquee-wrapper:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+/* कार्ड का डिज़ाइन और लिंक रिसेट */
+.tech-card,
+.tech-logo-card {
+  background: var(--surface) !important;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  height: 70px;
+  min-width: 190px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.95rem;
+  box-shadow: none !important;
+  flex-shrink: 0;
+  cursor: pointer;
+  text-decoration: none !important;
+  transition: border-color 0.3s ease, transform 0.2s ease;
+}
+
+.tech-card:hover,
+.tech-logo-card:hover {
+  border-color: var(--accent);
+  transform: translateY(0px); /* होवर करने पर कार्ड हल्का सा ऊपर उठेगा */
+}
+
+/* 🌟 लोगो का साइज़ यहाँ बड़ा कर दिया है (36px) */
+.tech-card img.tech-logo,
+.tech-logo-card img.tech-logo {
+  width: 35px;
+  height: 32px;
+  object-fit: contain;
+  flex-shrink: 0;
+
+  /* border-radius: 10px;
+  padding: 5px; */
+}
+
+.tech-card span,
+.tech-logo-card span {
+  white-space: nowrap;
+  color: var(--text);
+}
+
+.tech-card .cpp-icon {
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: var(--accent);
+}
+
+.tech-subtext {
+  font-size: 0.9rem;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 10px;
+}
+
+.marquee-left {
+  animation: scrollLeft 85s linear infinite;
+}
+
+.marquee-right {
+  animation: scrollRight 85s linear infinite;
+}
+
+/* --- बिल्कुल जीरो-जर्क कीफ़्रेम गणित --- */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 7.5px)); 
+  }
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(calc(-50% - 7.5px));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .marquee-left, .marquee-right {
+    animation-duration: 85s;
+  }
+  
+  .tech-stack-section h2 {
+    font-size: 1.4rem;
+    padding: 0 15px;
+  }
+  
+  .tech-card,
+  .tech-logo-card {
+    height: 65px;
+    min-width: 170px;
+    padding: 0 16px;
+    font-size: 0.9rem;
+  }
+}

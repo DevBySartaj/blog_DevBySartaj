@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- =========================
+         Basic Meta
+    ========================== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- =========================
+         Primary SEO & Title
+    ========================== -->
+    <title>404 Page Not Found | DevBySartaj</title>
+    <meta name="description" content="Oops! The page you're looking for doesn't exist or has been moved.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://blogdevbysartaj.web.app/404.html">
+
+    <!-- =========================
+         Theme
+    ========================== -->
+    <meta name="theme-color" content="#0d1117">
+
+    <!-- =========================
+         CSS Files
+    ========================== -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/search.css">
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+          /* Light Theme Colors (Default) */
+          --bg: #f4f6fb;
+          --surface: #ffffff;
+          --surface-2: #f0f3fa;
+          --border: #e2e7f0;
+          --text: #0b1220;
+          --text2: white;
+          --muted: #5a6478;
+          --accent: #2f6bff;
+          --accent-hover: #1f57e0;
+          --radius: 14px;
+          --shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Dark Theme (Triggered by adding 'dark' class to body) */
+        body.dark {
+          --bg: #0b1220;
+          --surface: #111a2e;
+          --surface-2: #16223b;
+          --border: #1f2c48;
+          --text: #e6ecf7;
+          --text2: black;
+          --muted: #9aa7bd;
+          --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg);
+            font-family: 'Inter', sans-serif;
+            color: var(--text);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .not-found-container {
+            background-color: var(--surface);
+            border: 1px solid var(--border);
+            padding: 3rem 2.5rem;
+            max-width: 450px;
+            width: 90%;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+
+        .not-found-container h2 {
+            font-size: 6.5rem;
+            font-weight: 800;
+            margin: 0;
+            color: var(--accent);
+            line-height: 1;
+            letter-spacing: -2px;
+        }
+
+        .not-found-container h1 {
+            font-size: 1.7rem;
+            font-weight: 700;
+            margin: 20px 0 10px;
+            color: var(--text);
+        }
+
+        .not-found-container p {
+            font-size: 0.95rem;
+            color: var(--muted);
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+        .home-btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--text2);
+            padding: 12px 28px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.2s ease, transform 0.2s ease;
+        }
+
+        .home-btn:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="not-found-container">
+        <h2>404</h2>
+        <h1>Oops! Page Not Found</h1>
+        <p>The page you're looking for doesn't exist or has been moved. Please check the URL or head back home.</p>
+        <a href="https://blogdevbysartaj.web.app/" class="home-btn">Go Home</a>
+    </div>
+
+</body>
+</html>

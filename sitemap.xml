@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="https://www.xml-sitemaps.com/css/sitemap.css"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Home Page -->
+  <url>
+       <loc>https://blogdevbysartaj.web.app/</loc>
+       <lastmod>2026-07-29T10:07:04+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>1.0000</priority>
+  </url>
+
+  <!-- Main Pages -->
+  <url>
+       <loc>https://blogdevbysartaj.web.app/about.html</loc>
+       <lastmod>2026-07-29T10:07:04+00:00</lastmod>
+       <changefreq>monthly</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://blogdevbysartaj.web.app/contact.html</loc>
+       <lastmod>2026-07-29T10:07:04+00:00</lastmod>
+       <changefreq>monthly</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://blogdevbysartaj.web.app/search.html</loc>
+       <lastmod>2026-07-29T10:07:04+00:00</lastmod>
+       <changefreq>weekly</changefreq>
+       <priority>0.7000</priority>
+  </url>
+  <url>
+       <loc>https://blogdevbysartaj.web.app/store.html</loc>
+       <lastmod>2026-07-29T10:07:04+00:00</lastmod>
+       <changefreq>weekly</changefreq>
+       <priority>0.8000</priority>
+  </url>
+  <url>
+       <loc>https://blogdevbysartaj.web.app/my-gear.html</loc>
+       <lastmod>2026-07-29T10:07:04+00:00</lastmod>
+       <changefreq>monthly</changefreq>
+       <priority>0.6000</priority>
+  </url>
+  <url>
+       <loc>https://blogdevbysartaj.web.app/work-with-us.html</loc>
+       <lastmod>2026-07-29T10:07:04+00:00</lastmod>
+       <changefreq>monthly</changefreq>
+       <priority>0.6000</priority>
+  </url>
+
+  <!-- Legal Pages -->
+  <url>
+       <loc>https://blogdevbysartaj.web.app/privacy.html</loc>
+       <lastmod>2026-07-29T10:07:04+00:00</lastmod>
+       <changefreq>yearly</changefreq>
+       <priority>0.3000</priority>
+  </url>
+  <url>
+       <loc>https://blogdevbysartaj.web.app/terms.html</loc>
+       <lastmod>2026-07-29T10:07:04+00:00</lastmod>
+       <changefreq>yearly</changefreq>
+       <priority>0.3000</priority>
+  </url>
+  <url>
+       <loc>https://blogdevbysartaj.web.app/refund.html</loc>
+       <lastmod>2026-07-29T10:07:04+00:00</lastmod>
+       <changefreq>yearly</changefreq>
+       <priority>0.3000</priority>
+  </url>
+
+  <!-- Blog & Subfolder Pages -->
+  <url>
+       <loc>https://blogdevbysartaj.web.app/blogpost/blog-firebase</loc>
+       <lastmod>2026-07-29T10:07:04+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+  </url>
+  <url>
+       <loc>https://blogdevbysartaj.web.app/html/blogpage01.html</loc>
+       <lastmod>2026-07-29T10:07:04+00:00</lastmod>
+       <changefreq>weekly</changefreq>
+       <priority>0.6000</priority>
+  </url>
+  <url>
+       <loc>https://blogdevbysartaj.web.app/html/blogpage02.html</loc>
+       <lastmod>2026-07-29T10:07:04+00:00</lastmod>
+       <changefreq>weekly</changefreq>
+       <priority>0.6000</priority>
+  </url>
+
+</urlset>
