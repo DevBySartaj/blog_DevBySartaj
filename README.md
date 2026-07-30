@@ -47,7 +47,7 @@ Welcome to the official repository of **DevBySartaj**! This is a modern, lightwe
 
 1. **Clone this repository:**
    ```bash
-   git clone https://github.com
+   git clone https://github.com/DevBySartaj/blog_DevBySartaj.git
    ```
 2. **Navigate into the directory:**
    ```bash
@@ -60,22 +60,7 @@ Welcome to the official repository of **DevBySartaj**! This is a modern, lightwe
 
 ---
 
-## 🌐 Deployment (Firebase Hosting)
 
-This site is continuously deployed using the **Firebase CLI**. To deploy updates:
-
-1. Install Firebase tools (if not done already):
-   ```bash
-   npm install -g firebase-tools
-   ```
-2. Login to your account:
-   ```bash
-   firebase login
-   ```
-3. Deploy directly to the live server:
-   ```bash
-   firebase deploy
-   ```
 
 ---
 
