@@ -2,7 +2,7 @@
 
 Welcome to the official repository of **DevBySartaj**! This is a modern, lightweight, and fully responsive personal tech blog and engineering portfolio website. It showcases deep-tech articles, full-stack applications, low-level systems projects, and custom UI/UX designs.
 
-🌐 **Live URL:** [https://web.app](https://web.app)
+🌐 **Live URL:** [https://web.app](https://blogdevbysartaj.web.app/)
 
 ---
 
