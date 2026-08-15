@@ -64,4 +64,4 @@ Welcome to the official repository of **DevBySartaj**! This is a modern, lightwe
 
 ---
 
-Designed & Built with ❤️ by [Sartaj](https://web.app) in India.
+Designed & Built with ❤️ by [Sartaj The Portfolio](https://www.sartajpage.site/index.html) in India.
