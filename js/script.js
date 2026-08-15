@@ -99,8 +99,8 @@ const filterButtons = document.querySelectorAll('.filter-pill');
 
 // आपके सभी ब्लॉग आर्टिकल्स की लिस्ट (type के साथ)
 const allBlogs = [
-  { title: "How to Deploy a Website using Firebase Hosting", category: "DevOps", type: "blogs", link: "/blogpost/blog-firebase.html", desc: "Learn how to deploy your static website easily using Firebase CLI..." },
-  { title: "How to Install C/C++ Compiler on Ubuntu", category: "Linux / C++", type: "tutorials", link: "#", desc: "Complete guide on installing GCC, G++ and build-essential packages..." },
+  { title: "How to Deploy a Website using Firebase Hosting", category: "DevOps", type: "Blog", link: "/blogpost/blog-firebase.html", desc: "Learn how to deploy your static website easily using Firebase CLI..." },
+  { title: "How to Deploy a Website using Vercel", category: "DevOps", type: "Blog", link: "/blogpost/blog-vercel.html", desc: "Complete guide on installing GCC, G++ and build-essential packages..." },
   { title: "Modern JavaScript Features You Should Know", category: "Programming", type: "courses", link: "#", desc: "Explore essential ES6+ features like Promises, Async/Await..." },
   { title: "How to Design Scalable Web Applications", category: "System Design", type: "blogs", link: "#", desc: "Key concepts of load balancing, database caching..." }
 ];

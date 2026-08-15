@@ -143,6 +143,9 @@ body {
   overflow: hidden;
 }
 
+.command-line{
+  color: #ffffff;
+}
 .copy-action-wrapper {
   position: absolute;
   top: 12px;
@@ -198,6 +201,7 @@ body {
   font-family: 'Fira Code', Consolas, monospace;
   font-size: 0.95rem;
   padding-right: 30px;
+  
 }
 
 /* --- Terminal Output Box Styling --- */
