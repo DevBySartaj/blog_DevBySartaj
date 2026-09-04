@@ -16,6 +16,7 @@
   --accent-hover: #1f57e0;
   --radius: 14px;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  --logo: black;
 
   /* --bg-overlay: rgba(255, 255, 255, 0.93); */
   --bg-overlay2: rgba(6, 6, 6, 0.94);
@@ -31,6 +32,8 @@ body.dark {
   --text2: black;
   --muted: #9aa7bd;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+
+  --logo: #ffffff;
 
   --bg-overlay: rgba(6, 6, 6, 0.94);
   /* --bg-overlay2: rgba(255, 255, 255, 0.93); */
@@ -53,6 +56,9 @@ body {
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 a {
@@ -118,6 +124,49 @@ img {
   width: 95%;
 }
 
+
+
+/* logo DevBysartaj
+.logo2 {
+  display: inline-flex;
+  align-items: baseline;
+  text-decoration: none;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.logo-dev {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.55rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -1.5px;
+}
+
+.logo-sartaj {
+  font-family: "Allura", cursive;
+  font-size: 2.35rem;
+  font-weight: 400;
+  margin-left: 4px;
+
+  background: linear-gradient(
+    135deg,
+    #fff6b0 0%,
+    #ffd000 45%,
+    #ff9d00 100%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  text-shadow: 0 0 18px rgba(255, 193, 7, 0.18);
+} */
+
+
+
+
+
 .logo {
   font-size: 25px;
   font-weight: 800;
@@ -125,7 +174,7 @@ img {
 }
 
 .logo span {
-  color: var(--accent);
+  color: var(--logo);
 }
 
 .nav-links {
